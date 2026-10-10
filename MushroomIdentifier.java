@@ -4,26 +4,21 @@ public class MushroomIdentifier {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        System.out.println("Think of one of these mushrooms: Agaric Jaunissant, Amanite tue-mouches, Cepe de bordeaux, Coprin chevelu, Girolle, Pied bleu.");
+        System.out.println("Think of one of these mushrooms: \nAgaric Jaunissant, \nAmanite tue-mouches, \nCepe de bordeaux, \nCoprin chevelu, \nGirolle, \nPied bleu.");
         System.out.println("Answer with 'yes' or 'no'.\n");
         
-        // Question 1
-        System.out.print("1. Does your mushroom have a convex cup?");
-        String convex = scanner.nextLine().trim().toLowerCase();
+        System.out.print("1. Does your mushroom have a convex cup?: ");
+        String convex = scanner.nextLine();
         
         if (convex.equals("yes")) {
-            // Group: Agaric jaunissant, Amanite tue-mouches, Pied bleu
-            // Question 2
-            System.out.print("2. Does your mushroom grow in a meadow?");
-            String meadow = scanner.nextLine().trim().toLowerCase();
+            System.out.print("2. Does your mushroom grow in a meadow?: ");
+            String meadow = scanner.nextLine();
             
             if (meadow.equals("yes")) {
                 System.out.println("Result: Your mushroom is Agaric jaunissant.");
             } else {
-                // Forest + Convex cup: Amanite tue-mouches or Pied bleu
-                // Question 3
-                System.out.print("3. Does your mushroom have a ring?");
-                String ring = scanner.nextLine().trim().toLowerCase();
+                System.out.print("3. Does your mushroom have a ring?: ");
+                String ring = scanner.nextLine();
                 
                 if (ring.equals("yes")) {
                     System.out.println("Result: Your mushroom is Amanite tue-mouches.");
@@ -32,18 +27,14 @@ public class MushroomIdentifier {
                 }
             }
         } else {
-            // Group: Cepe de bordeaux, Coprin chevelu, Girolle
-            // Question 2
-            System.out.print("2. Does your mushroom have pores?");
-            String pores = scanner.nextLine().trim().toLowerCase();
+            System.out.print("2. Does your mushroom have pores?: ");
+            String pores = scanner.nextLine();
             
             if (pores.equals("yes")) {
                 System.out.println("Result: Your mushroom is Cepe de bordeaux.");
             } else {
-                // Coprin chevelu or Girolle
-                // Question 3
-                System.out.print("3. Does your mushroom have a ring?");
-                String ring = scanner.nextLine().trim().toLowerCase();
+                System.out.print("3. Does your mushroom have a ring?: ");
+                String ring = scanner.nextLine();
                 
                 if (ring.equals("yes")) {
                     System.out.println("Result: Your mushroom is Coprin chevelu.");
