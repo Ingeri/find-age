@@ -1,4 +1,4 @@
-# Java Console Programs
+# Java Programs
 
 This repository contains two small Java programs:
 
