@@ -64,11 +64,9 @@ public class Test1 extends JFrame{
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                new Test1().setVisible(true);
-            }
+        SwingUtilities.invokeLater(() -> {
+            Test1 objTest1 = new Test1();
+            objTest1.setVisible(true);
         });
 
     }
