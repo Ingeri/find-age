@@ -26,7 +26,7 @@ public class BicycleRentalGUI extends JFrame{
         endField = new JTextField();
         add(endField);
 
-        JButton calculateButton = new JButton("alculate Cost");
+        JButton calculateButton = new JButton("Calculate Cost");
         add(calculateButton);
 
         resultLable = new JLabel("   Tatal = 0   ");
